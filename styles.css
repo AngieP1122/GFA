@@ -1,0 +1,323 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* Fondo principal blanco */
+    color: #333333; /* Texto principal gris oscuro */
+}
+
+/* Fondo de toda la página (puedes agregar una imagen de fondo aquí) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imag/descarga.jpeg'); /* Imagen de fondo de la página */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Transparencia de la imagen de fondo */
+    z-index: -1;
+}
+
+/* Encabezado */
+header {
+    background-image: url('imag/Campo.jpg'); 
+    background-color: #004d40; /* Verde oscuro para el fondo del encabezado */
+    color: #ffffff; /* Texto blanco */
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #dddddd; /* Texto gris claro */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: rgba(0, 77, 64, 0.7); /* Fondo verde oscuro semitransparente */
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente en hover */
+}
+
+/* Secciones */
+section {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 10;
+    color: #004d40; /* Títulos en verde oscuro */
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666666; /* Texto gris */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #333333; /* Bordes en gris oscuro */
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4; /* Fondo gris claro para encabezados */
+    color: #333333; /* Texto gris oscuro */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fila par en gris claro */
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0; /* Fila en hover en gris */
+}
+
+.total {
+    font-weight: bold;
+    background-color: #e2e2e2; /* Fondo gris para la fila total */
+}
+
+/* Estilos para el calendario */
+.calendario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mes {
+    background-color: #004d40; /* Fondo verde oscuro */
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.dias-semana {
+    display: flex;
+    background-color: #00796b; /* Fondo verde intermedio */
+    color: white;
+}
+
+.dias-semana > div {
+    flex: 1;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.dias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dias > div {
+    flex: 1 0 14.28%;
+    padding: 20px 0;
+    border: 1px solid #f4f4f4; /* Bordes gris claro */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    color: #333333; /* Texto gris oscuro */
+}
+
+.empty {
+    background-color: #ecf0f1; /* Fondo gris claro para días vacíos */
+}
+
+/* Estilos para el formulario de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 2em auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: #004d40; /* Título en verde oscuro */
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333333; /* Texto gris oscuro */
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #cccccc; /* Borde gris claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.7em;
+    background-color: #004d40; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #00796b; /* Fondo verde intermedio en hover */
+}
+
+/* Seccion registro */
+#registro {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 2em;
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registro label {
+    margin-bottom: 0.5em;
+    color: #333333; /* Texto gris oscuro */
+}
+
+#registro input, #registro textarea {
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 1px solid #cccccc; /* Borde gris claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#registro button {
+    padding: 0.7em;
+    background-color: #004d40; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: ba 0.3s ease;
+}
+
+#registro button:hover {
+    background-color: #00796b; /* Fondo verde intermedio en hover */
+}
+
+/* Sección de contacto */
+#contacto {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 2em;
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    margin-bottom: 0.5em;
+    color: #333333; /* Texto gris oscuro */
+}
+
+#contacto input, #contacto textarea {
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 1px solid #cccccc; /* Borde gris claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contacto button {
+    padding: 0.7em;
+    background-color: #004d40; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contacto button:hover {
+    background-color: #00796b; /* Fondo verde intermedio en hover */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #004d40; /* Fondo verde oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}

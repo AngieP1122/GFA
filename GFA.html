@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Fincas Agrícolas</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Gestión de Fincas Agrícolas</h1>
+        <h3>Este es un sitio web solo informativo en la primera version</h3>
+        <nav>
+            <ul>
+                <li><a href="#lotes">Lotes</a></li>
+                <li><a href="#finanzas">Finanzas</a></li>
+                <li><a href="#inventarios">Inventarios</a></li>
+                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#Registro">Registro</a></li>
+                <li><a href="#login">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="lotes">
+        <h2>Lotes</h2>
+        <p>Administración y visualización de lotes agrícolas.</p>
+        <table>
+            <tr>
+                <th>ID Lote</th>
+                <th>Nombre del Lote</th>
+                <th>Área (Hectáreas)</th>
+                <th>Ubicación</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lote A</td>
+                <td>10.5</td>
+                <td>Sector Norte</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lote B</td>
+                <td>8.2</td>
+                <td>Sector Sur</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lote C</td>
+                <td>12.3</td>
+                <td>Sector Este</td>
+            </tr>
+            <!-- Agrega más lotes según sea necesario -->
+        </table>
+        <h2>Cultivos</h2>
+    <table>
+        <tr>
+            <th>ID Cultivo</th>
+            <th>Nombre del Cultivo</th>
+            <th>ID Lote</th>
+            <th>Fecha de Plantación</th>
+            <th>Fecha de Cosecha</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Maíz</td>
+            <td>1</td>
+            <td>2024-03-15</td>
+            <td>2024-08-10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Trigo</td>
+            <td>2</td>
+            <td>2024-04-01</td>
+            <td>2024-09-05</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Soja</td>
+            <td>3</td>
+            <td>2024-02-20</td>
+            <td>2024-07-25</td>
+        </tr>
+        <!-- Agrega más cultivos según sea necesario -->
+    </table>
+    </section>
+    
+    <section id="finanzas">
+        <h2>Finanzas</h2>
+        <p>Gestión de ingresos y gastos relacionados con la finca.</p>
+
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Ingreso ($)</th>
+                <th>Gasto ($)</th>
+                <th>Balance ($)</th>
+            </tr>
+            <tr>
+                <td>2024-08-01</td>
+                <td>Venta de Maíz</td>
+                <td>3,000.00</td>
+                <td>0.00</td>
+                <td>3,000.00</td>
+            </tr>
+            <tr>
+                <td>2024-08-05</td>
+                <td>Compra de Fertilizantes</td>
+                <td>0.00</td>
+                <td>1,500.00</td>
+                <td>1,500.00</td>
+            </tr>
+            <tr>
+                <td>2024-08-10</td>
+                <td>Venta de Trigo</td>
+                <td>2,500.00</td>
+                <td>0.00</td>
+                <td>4,000.00</td>
+            </tr>
+            <tr>
+                <td>2024-08-12</td>
+                <td>Pago de Salarios</td>
+                <td>0.00</td>
+                <td>1,200.00</td>
+                <td>2,800.00</td>
+            </tr>
+            <!-- Agrega más filas según sea necesario -->
+            <tr class="total">
+                <td colspan="2">Total</td>
+                <td>5,500.00</td>
+                <td>2,700.00</td>
+                <td>2,800.00</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="inventarios">
+        <h2>Inventarios</h2>
+        <p>Seguimiento del inventario de productos y recursos.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Producto</th>
+                    <th>Nombre del Producto</th>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                    <th>Unidad</th>
+                    <th>Precio Unitario ($)</th>
+                    <th>Valor Total ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Fertilizante A</td>
+                    <td>Insumos</td>
+                    <td>50</td>
+                    <td>Sacos</td>
+                    <td>20.00</td>
+                    <td>1,000.00</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Herbicida B</td>
+                    <td>Insumos</td>
+                    <td>30</td>
+                    <td>Litros</td>
+                    <td>15.00</td>
+                    <td>450.00</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Semilla de Maíz</td>
+                    <td>Semillas</td>
+                    <td>100</td>
+                    <td>Kilogramos</td>
+                    <td>5.00</td>
+                    <td>500.00</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="calendario">
+        <h2>Calendario de Actividades</h2>
+        <p>Planificación y seguimiento de actividades agrícolas.</p>
+
+        <div class="calendario">
+            <div class="mes">
+                <span>Agosto 2024</span>
+            </div>
+            <div class="dias-semana">
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+            </div>
+            <div class="dias">
+                <!-- Días anteriores al primer día del mes -->
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+    
+                <!-- Días del mes -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+                <div>31</div>
+            </div>
+        </div>
+    </section>
+
+   <section class="login">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" onsubmit="return login(event)">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="error-message"></p>
+    <script src="script.js"></script>
+   </section>
+    
+   <section class="Registro">
+      
+        <h2>Registro</h2>
+        <form id="loginForm" action="register.php" action="#" method="post">
+            <label for="nombre">Usuario:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+        <p id="error-message"></p>
+    
+        <script src="script.js"></script>
+       
+   </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Gestor de Fincas Agrícolas</p>
+    </footer>
+</body>
+</html>
